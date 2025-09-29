@@ -1,0 +1,14 @@
+﻿Console.WriteLine("price per small carpet 25$");
+Console.WriteLine("price per small carpet 35$");
+Console.WriteLine("Sales tax rate is 6%");
+Console.WriteLine("Enter a Number of small carpets");
+double number1 = Convert.ToDouble(System.Console.ReadLine());
+Console.WriteLine("Enter a Number of large carpets");
+double number2 = Convert.ToDouble(System.Console.ReadLine());
+Console.WriteLine($"Total price for small carpets = {number1 * 25:c}");
+Console.WriteLine($"Total price for large carpets = {number2 * 35:c}");
+Console.WriteLine($"Total price for carpets = {(number2 * 35) + (number1 * 25):c}");
+Console.WriteLine($"Tax = {((number2 * 35) + (number1 * 25)) * 0.06:c}");
+Console.WriteLine("=====================================================");
+Console.WriteLine($"Total price = {((number2 * 35) + (number1 * 25)) + ((number2 * 35) + (number1 * 25)) * 0.06:c}");
+Console.WriteLine("this estimate valid for 30 days");
